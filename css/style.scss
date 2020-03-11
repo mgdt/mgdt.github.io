@@ -5,6 +5,9 @@ $orange: #D35400;
     font-family: 'Roboto';
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 ul {
     list-style: none;
 }
@@ -45,7 +48,7 @@ ul {
         margin-top: 5px;
     }
 }
-.nav__link--active:after {
+.nav__link:hover:after {
     content: '';
     width: 61px;
     height: 1px;
