@@ -2393,4 +2393,103 @@ main {
     letter-spacing: 0.02em;
     color: #222222;
   }
+  .analys__img {
+    display: none;
+  }
+  .how__title {
+    margin-top: 40px;
+  }
+  .how__title .section__title-small {
+    bottom: -3px;
+  }
+  .section__title-small {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+  }
+  .how__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .how__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    width: 100%;
+  }
+  .how__item-id {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .how__item-num {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .how__item-line {
+    width: 2px;
+    margin-bottom: 8px;
+  }
+  .how__item-1 .how__item-line {
+    height: 156px;
+  }
+  .how__item-2 .how__item-line {
+    height: 183px;
+  }
+  .how__item-3 .how__item-line {
+    height: 203px;
+  }
+  .how__item-4 .how__item-line {
+    height: 145px;
+  }
+  .how__item-5 .how__item-line {
+    height: 184px;
+  }
+  .how__item-2 .how__item-img img {
+    position: relative;
+    left: 15px;
+  }
+  .how__item-inner {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .how__item-desc {
+    font-size: 14px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #222222;
+    height: unset;
+  }
 }
