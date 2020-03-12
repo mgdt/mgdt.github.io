@@ -860,6 +860,77 @@
             </div>
         </section>
 
+        <section class="team-mob">
+            <div class="container">
+                <h2 class="section__title team-mob__title">
+                    <div class="section__title-small">Наша <span>команда</span></div>
+                    <div class="section__title-big"><span>Команда</span></div>
+                </h2>
+                <div class="team-mob__content">
+                    <div class="swiper-wrapper">
+                        <div class="team-mob__item swiper-slide">
+                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
+                            <div class="team-mob__name">Александр Гошин</div>
+                            <div class="team-mob__subtitle">Генеральный директор</div>
+                            <div class="team-mob__desc">
+                                Помогаем начать новую жизнь<br>
+                                без финансовых обязательств
+                            </div>
+                        </div>
+                        <div class="team-mob__item swiper-slide">
+                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
+                            <div class="team-mob__name">Александр Гошин</div>
+                            <div class="team-mob__subtitle">Генеральный директор</div>
+                            <div class="team-mob__desc">
+                                Помогаем начать новую жизнь<br>
+                                без финансовых обязательств
+                            </div>
+                        </div>
+                        <div class="team-mob__item swiper-slide">
+                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
+                            <div class="team-mob__name">Александр Гошин</div>
+                            <div class="team-mob__subtitle">Генеральный директор</div>
+                            <div class="team-mob__desc">
+                                Помогаем начать новую жизнь<br>
+                                без финансовых обязательств
+                            </div>
+                        </div>
+                        <div class="team-mob__item swiper-slide">
+                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
+                            <div class="team-mob__name">Александр Гошин</div>
+                            <div class="team-mob__subtitle">Генеральный директор</div>
+                            <div class="team-mob__desc">
+                                Помогаем начать новую жизнь<br>
+                                без финансовых обязательств
+                            </div>
+                        </div>
+                        <div class="team-mob__item swiper-slide">
+                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
+                            <div class="team-mob__name">Александр Гошин</div>
+                            <div class="team-mob__subtitle">Генеральный директор</div>
+                            <div class="team-mob__desc">
+                                Помогаем начать новую жизнь<br>
+                                без финансовых обязательств
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-mob__nav">
+                        <div class="team-mob__prev-wrap">
+                            <img src="img/wins/wins-prev.svg" alt="" class="team-mob__prev">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="team-mob__next-wrap">
+                            <img src="img/wins/wins-next.svg" alt="" class="team-mob__next">
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
         <section class="action action-3">
             <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
             <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
@@ -1381,6 +1452,20 @@
             });
         }
         
+        var mySwiper2 = new Swiper('.team-mob__content', {
+                direction: 'horizontal',
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.team-mob__next',
+                    prevEl: '.team-mob__prev',
+                },
+            });
 
         $(document).ready(function () {
             $(".recommend__item-fancy").fancybox();
