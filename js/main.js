@@ -186,6 +186,9 @@ popups.forEach(function(item, index) {
 var popupLastForm = document.querySelector('.popup-last__form');
 popupLastForm.addEventListener('submit', function(event) {
     event.preventDefault();
+    popups.forEach(function(item) {
+        item.style.display = 'none';
+    });
     popupWrap.style.display = '';
     popupThank.style.display = '';
 });
@@ -217,6 +220,15 @@ popupClose.addEventListener('click', function() {
     popupWrap.style.display = 'none';
     popupThank.style.display = 'none';
 });
+
+$('.popup-close').click(function() {
+    popups.forEach(function(item) {
+        item.style.display = 'none';
+    });
+    popupWrap.style.display = 'none';
+    popupThank.style.display = 'none';
+});
+
 
 function popup() {
     popupWrap.style.display = '';
@@ -293,5 +305,18 @@ if(document.documentElement.clientWidth < 576) {
     `);
     $('.footer-col__name').html(`
         &copy;  2020 “Goshin group”
+    `);
+    $('.popup-2 .popup__title').html(`
+        Сумма долга, которую<br>
+        Вы хотите взыскать:
+    `);
+    $('.popup-3 .popup__title').html(`
+        Укажите документы,<br>
+        подтверждающие<br>
+        задолженность:
+    `);
+    $('.popup-4 .popup__title').html(`
+        На какой стадии<br>
+        находится взыскание?
     `);
 }

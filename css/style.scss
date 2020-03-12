@@ -1479,12 +1479,238 @@ main {
 .team-mob {
     display: none;
 }
-
-
-
+.mobile-menu {
+    display: none;
+}
+.popup__progress-mob {
+    display: none;
+}
+.popup-thank__img-mob {
+    display: none;
+}
+.popup-thank__woman-mob {
+    display: none;
+}
 
 
 @media only screen and (max-width: 576px) {
+    .popup__progress {
+        display: none;
+    }
+    .popup__header-title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .popup__inner {
+        padding: 20px;
+        padding-bottom: 26px;
+    }
+    .popup {
+        width: 320px;
+        height: unset;
+    }
+    .popup__right {
+        display: none;
+    }
+    .popup__header {
+        height: 60px;
+    }
+    .popup-1 {
+        height: 468px;
+    }
+    .popup__btn-next {
+        height: 36px;
+        margin-right: 0;
+        width: 100%;
+    }
+    .popup-close {
+        width: 30px;
+        cursor: pointer;
+    }
+    .popup__progress-num {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #D9E6EA;
+        span {
+            color: #222222;
+        }
+    }
+    .popup__progress-mob {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .popup__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #222222;
+    }
+    .popup__content {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .popup__item {
+        width: 100% !important;
+        height: 42px;
+        padding: 10px;
+    }
+    .popup__check {
+        width: 20px;
+        height: 20px;
+    }
+    .popup__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .popup__label {
+        font-size: 16px;
+        line-height: 145%;
+        letter-spacing: 0.02em;
+        color: #222222;
+    }
+    .popup-2 {
+        height: 476px;
+    }
+    .popup__btns {
+        flex-direction: column;
+    }
+    .popup__btn-next {
+        margin-bottom: 19px;
+    }
+    .popup__btn-prev {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 110%;
+        text-align: center;
+        color: #222222;
+    }
+    .popup__input-wrap {
+        width: 100%;
+        height: 40px;
+    }
+    .popup__val {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 145%;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+    .popup__input {
+        font-size: 16px;
+    }
+    .popup-3 {
+        height: 588px;
+    }
+    .popup__item-multi {
+        width: 100% !important;
+        height: 42px;
+        padding: 10px;
+    }
+    .popup__item-multi:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .popup-4 {
+        height: 580px;
+    }
+    .popup__check {
+        flex-shrink: 0;
+    }
+    .popup-4 .popup__item {
+        height: auto;
+    }
+    .popup-last {
+        height: 554px;
+    }
+    .popup-last__items {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .popup__subtitle {
+        text-align: center;
+        font-size: 16px;
+        line-height: 145%;
+        text-align: center;
+        color: #222222;
+    }
+    .popup-last__btn {
+        height: 36px;
+        width: 100%;
+        margin-bottom: 3px;
+    }
+    .popup-last__label {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .popup-last__item:first-child {
+        margin-bottom: 20px;
+    }
+    .popup-last__input {
+        height: 40px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .popup-thank {
+        width: 320px;
+        height: 456px;
+    }
+    .popup-thank__close {
+        right: 20px;
+        top: 20px;
+        width: 30px;
+    }
+    .popup-thank__content {
+        padding-left: 20px;
+        padding-top: 64px;
+        padding-right: 20px;
+    }
+    .popup-thank__woman {
+        display: none;
+    }
+    .popup-thank__img-sm {
+        display: none;
+    }
+    .popup-thank__img-big {
+        display: none;
+    }
+    .popup-thank__title {
+        font-size: 20px;
+        margin-bottom: 13px;
+        text-align: center;
+    }
+    .popup-thank__desc {
+        font-size: 16px;
+        text-align: center;
+    }
+    .popup-thank__down-text {
+        width: 129px;
+        font-size: 14px;
+        position: relative;
+        z-index: 53;
+    }
+    .popup-thank__img-mob {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
+    .popup-thank__woman-mob {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+
+
+
+    .mobile-menu {
+        display: block;
+    }
     .wins__prev {
         margin-right: 0;
     }
@@ -1870,8 +2096,11 @@ main {
     .analys__img {
         display: none;
     }
+    .how {
+        padding-top: 40px;
+    }
     .how__title {
-        margin-top: 40px;
+        margin-top: 0px;
     }
     .how__title .section__title-small {
         bottom: -3px;
@@ -2042,8 +2271,11 @@ main {
         margin-top: 15px;
         padding-bottom: 10px;
     }
+    .contacts {
+        padding-top: 40px;
+    }
     .contacts__title {
-        margin-top: 40px;
+        margin-top: 0px;
 
     }
     .faq {
@@ -2068,9 +2300,6 @@ main {
         display: none;
     }
     .line:nth-child(6) {
-        display: none;
-    }
-    .team {
         display: none;
     }
     // .about {
@@ -2130,8 +2359,11 @@ main {
     #map {
         height: 298px;
     }
+    .about {
+        padding-top: 40px;
+    }
     .about__title {
-        margin-top: 40px;
+        margin-top: 0px;
         margin-bottom: 30px;
     }
     .about .section__title-small {
@@ -2281,5 +2513,16 @@ main {
         cursor: pointer;
         z-index: 29;
         display: none;
+    }
+    .team-desk {
+        display: none;
+    }
+    .team {
+        padding-bottom: 0;
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .team-mob__title {
+        margin-top: 0;
     }
 }
