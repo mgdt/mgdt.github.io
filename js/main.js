@@ -223,6 +223,19 @@ function popup() {
     popups[0].style.display = '';
 }
 
+var mobileBurger = document.querySelector('.burger');
+var mobileWrap = document.querySelector('.mobile-wrap');
+var mobileMenu = document.querySelector('.mobile-menu');
+
+mobileBurger.addEventListener('click', function() {
+    $(mobileWrap).slideToggle(200);
+    $(mobileMenu).slideToggle(200);
+});
+mobileWrap.addEventListener('click', function() {
+    $(mobileWrap).slideUp(200);
+    $(mobileMenu).slideUp(200);
+});
+
 if(document.documentElement.clientWidth < 576) {
     $('.header__title').html(`
         Взыскание задолженности
