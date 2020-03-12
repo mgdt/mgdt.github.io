@@ -252,4 +252,33 @@ if(document.documentElement.clientWidth < 576) {
         и правовой анализ</span> Вашего должника
         с помощью закрытых баз данных
     `);
+    $('.action-1 .action__subtitle').html(`
+        Наш специалист подъедет<br>
+        в удобное для Вас место и время.
+    `);
+    $('.action-2 .action__title').html(`
+        Оставить заявку<br>
+        на взыскание долга
+    `);
+    $('.action-2 .action__subtitle').html(`
+        Узнайте срок и стоимость услуги<br>
+        за 1 минуту
+    `);
+    $('.action-3 .action__subtitle').html(`
+        Узнайте срок и стоимость услуги<br>
+        за 1 минуту
+    `);
+    var faqQuestions = document.querySelectorAll('.faq__question');
+    console.log(faqQuestions);
+    $(faqQuestions[1]).html(`
+        Вы работаете только по Моск-<br>
+        ве и Московской области?
+    `);
+    $(faqQuestions[6]).html(`
+        Какие документы подтверж-<br>
+        дают задолженность?
+    `);
+    $('.footer-col__name').html(`
+        &copy;  2020 “Goshin group”
+    `);
 }

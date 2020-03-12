@@ -653,7 +653,9 @@
             </div>
         </section>
 
-        <section class="action">
+        <section class="action action-1">
+            <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
+            <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
             <div class="container">
                 <img class="action__img" src="img/analys/img.svg" alt="">
                 <div class="action__left">
@@ -696,7 +698,9 @@
             </div>
         </section>
 
-        <section class="action">
+        <section class="action action-2">
+            <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
+            <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
             <div class="container">
                 <img class="action__img" src="img/analys/img.svg" alt="">
                 <div class="action__left">
@@ -856,7 +860,9 @@
             </div>
         </section>
 
-        <section class="action">
+        <section class="action action-3">
+            <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
+            <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
             <div class="container">
                 <img class="action__img" src="img/analys/img.svg" alt="">
                 <div class="action__left">
@@ -891,6 +897,16 @@
                         <div class="faq__header">
                             <span class="faq__btn">+</span>
                             <span class="faq__question">Вы работаете только по Москве и Московской области?</span>
+                        </div>
+                        <p class="faq__text">
+                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
+                            до 2х лет, при отсутствии у должника ликвидных активов.
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <div class="faq__header">
+                            <span class="faq__btn">+</span>
+                            <span class="faq__question">Сколько времени занимает взыскание долга?</span>
                         </div>
                         <p class="faq__text">
                             Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
@@ -942,6 +958,7 @@
         </section>
 
         <section class="contacts" id="contacts">
+
             <div class="container">
                 <h2 class="section__title contacts__title">
                     <div class="section__title-small">
@@ -950,6 +967,36 @@
                     </div>
                     <div class="section__title-big"><span>контакты</span></div>
                 </h2>
+                <div class="contacts-mob">
+                    <div class="contacts-mob__item">
+                        <img src="img/contacts/marker.svg" class="contacts-mob__img">
+                        <p class="contacts-mob__desc">
+                            127051, Москва<br>
+                            Большой Каретный пер,<br>
+                            д. 24, стр. 2, офис 4
+                        </p>
+                    </div>
+                    <div class="contacts-mob__item">
+                        <img src="img/contacts/tel.svg" class="contacts-mob__img">
+                        <p class="contacts-mob__desc">
+                            +7 495 909-02-86<br>
+                            +7 985 722-55-55
+                        </p>
+                    </div>
+                    <div class="contacts-mob__item">
+                        <img src="img/contacts/mail.svg" class="contacts-mob__img">
+                        <p class="contacts-mob__desc">
+                            info@goshin.ru
+                        </p>
+                    </div>
+                    <div class="contacts-mob__item">
+                        <div class="map__soc">
+                            <img src="img/contacts/1.svg" alt="">
+                            <img src="img/contacts/2.svg" alt="">
+                            <img src="img/contacts/3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
                 <div class="map">
                     <div id="map"></div>
                     <div class="map__info">
@@ -1309,17 +1356,31 @@
             },
         });
 
-        var mySwiper1 = new Swiper('.recommend__content', {
-            direction: 'horizontal',
-            loop: true,
+        if(document.documentElement.clientWidth > 576) {
+            var mySwiper1 = new Swiper('.recommend__content', {
+                direction: 'horizontal',
+                loop: true,
 
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            slidesPerView: 2,
-            spaceBetween: 18,
-        });
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 2,
+                spaceBetween: 18,
+            });
+        } else {
+            var mySwiper1 = new Swiper('.recommend__content', {
+                direction: 'horizontal',
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 1,
+            });
+        }
+        
 
         $(document).ready(function () {
             $(".recommend__item-fancy").fancybox();

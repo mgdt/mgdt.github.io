@@ -1963,6 +1963,18 @@ main {
   display: none;
 }
 
+.action__left-img-mob {
+  display: none;
+}
+
+.action__img-mob {
+  display: none;
+}
+
+.contacts-mob {
+  display: none;
+}
+
 @media only screen and (max-width: 576px) {
   .wins__prev {
     margin-right: 0;
@@ -2491,5 +2503,207 @@ main {
     letter-spacing: 0.02em;
     color: #222222;
     height: unset;
+  }
+  .how {
+    padding-bottom: 40px;
+  }
+  .action {
+    height: 390px;
+  }
+  .action__right {
+    display: none;
+  }
+  .action__img {
+    display: none;
+  }
+  .action__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 135%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .action {
+    position: relative;
+  }
+  .action .container {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    padding-top: 40px;
+  }
+  .action__subtitle {
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  .action__btn {
+    margin-top: 130px;
+    height: 36px;
+  }
+  .action__left-img-mob {
+    display: block;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .action__img-mob {
+    display: block;
+    opacity: .3;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+  }
+  .recommend__title {
+    margin-top: 40px;
+  }
+  .recommend__title .section__title-small {
+    bottom: -8px;
+  }
+  .recommend__item:after {
+    display: none;
+  }
+  .recommend__item {
+    width: 100% !important;
+    height: 405px !important;
+  }
+  .recommend__item-view {
+    display: none;
+  }
+  .recommend__pagination {
+    margin-top: 30px;
+  }
+  .recommend {
+    padding-bottom: 40px;
+  }
+  .faq__title {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+  .faq__question {
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #222222;
+  }
+  .faq__btn {
+    width: 30px;
+    height: 30px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  .faq__item {
+    padding: 10px;
+  }
+  .faq__text {
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin-left: 0;
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+  .contacts__title {
+    margin-top: 40px;
+  }
+  .faq {
+    padding-bottom: 0;
+  }
+  .contacts .section__title-small {
+    bottom: -40px;
+  }
+  .map__info {
+    display: none;
+  }
+  .contacts {
+    padding-bottom: 0;
+  }
+  .contacts .container {
+    width: 100%;
+  }
+  .lines {
+    width: 195px;
+  }
+  .line:nth-child(5) {
+    display: none;
+  }
+  .line:nth-child(6) {
+    display: none;
+  }
+  .team {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .footer-col:not(:nth-child(1)) {
+    display: none;
+  }
+  .footer-col__list {
+    display: none;
+  }
+  .footer-col__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: rgba(238, 242, 248, 0.6);
+  }
+  .footer-col__name {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 44px 0px;
+  }
+  .contacts-mob {
+    display: block;
+  }
+  .contacts__title {
+    margin-bottom: 70px;
+  }
+  .contacts-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-mob__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .contacts-mob__desc {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #222222;
+  }
+  .map__soc {
+    margin: 0 auto;
   }
 }
