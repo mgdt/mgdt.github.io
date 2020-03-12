@@ -136,6 +136,19 @@ popups.forEach(function(item, index) {
         });
     }
 
+    var popupChecksMulti = item.querySelectorAll('.popup__item-multi');
+    if(popupChecksMulti) {
+        popupChecksMulti.forEach(function(elem) {
+            elem.addEventListener('click', function() {
+                if(elem.classList.contains('popup__item-active')) {
+                    elem.classList.remove('popup__item-active');
+                } else {
+                    elem.classList.add('popup__item-active');
+                }
+            });
+        });
+    }
+
     var popupInp = item.querySelector('.popup__input-wrap');
     if(popupInp) {
         popupInpInner = document.querySelector('.popup__input');
@@ -167,6 +180,7 @@ popups.forEach(function(item, index) {
     }
 
 });
+
 
 
 var popupLastForm = document.querySelector('.popup-last__form');
@@ -207,4 +221,35 @@ popupClose.addEventListener('click', function() {
 function popup() {
     popupWrap.style.display = '';
     popups[0].style.display = '';
+}
+
+if(document.documentElement.clientWidth < 576) {
+    $('.header__title').html(`
+        Взыскание задолженности
+        без предварительной оплаты
+    `);
+    $('.header__subtitle').html(`
+        Взыскиваем долги от 300 тыс. руб
+    `);
+    var headerFacts = document.querySelectorAll('.header__fact-text');
+    $(headerFacts[0]).html(`
+        85% успешных<br>
+        кейсов
+    `);
+    $(headerFacts[2]).html(`
+        Портфель взыскания<br>
+        на сумму более<br>
+        3,5 млрд рублей
+    `);
+    $('.wins__title .section__title-big span').html(`Победы`);
+    $('.analys__title').html(`
+        анализ должника
+        бесплатно за 24 ч
+    `);
+    $('.analys__subtitle').html(`
+        Заполните форму и мы <span>в течение 24 ча-
+        сов</span> отправим Вам на почту <span>финансовый
+        и правовой анализ</span> Вашего должника
+        с помощью закрытых баз данных
+    `);
 }
