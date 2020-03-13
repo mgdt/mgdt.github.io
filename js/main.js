@@ -248,6 +248,48 @@ mobileWrap.addEventListener('click', function() {
     $(mobileMenu).slideUp(200);
 });
 
+var xPressed = false;
+document.addEventListener('keydown', (event) => {
+    if (event.keyCode == 88) {
+        xPressed = true;
+    } 
+});
+document.addEventListener('keyup', (event) => {
+    if (event.keyCode == 88) {
+        xPressed = false;
+    } 
+});
+
+var onePressed = false;
+document.addEventListener('keydown', (event) => {
+    if (event.keyCode == 49) {
+        onePressed = true;
+    } 
+});
+document.addEventListener('keyup', (event) => {
+    if (event.keyCode == 49) {
+        onePressed = false;
+    } 
+});
+
+document.addEventListener('keydown', (event) => {
+    if (xPressed && onePressed) {
+        var title = document.querySelector('.words');
+        title.style.display = 'flex';
+        title.textContent = 'Верстка: Малых Григорий';
+    }
+});
+
+document.addEventListener('keyup', (event) => {
+    if (xPressed == false || onePressed == false) {
+        var title = document.querySelector('.words');
+        title.style.display = '';
+        title.textContent = '';
+    }
+});
+
+
+
 if(document.documentElement.clientWidth < 576) {
     $('.header__title').html(`
         Взыскание задолженности
