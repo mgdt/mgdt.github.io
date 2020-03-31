@@ -6,7 +6,15 @@
   font-family: 'Gotham Pro';
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: hidden;
+}
+
+.know {
   overflow-x: hidden;
 }
 
