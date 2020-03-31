@@ -1,1573 +1,279 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="fonts/athelas/stylesheet.css">
-    <link rel="stylesheet" href="fonts/roboto/stylesheet.css">
+    <link rel="stylesheet" href="fonts/GothamPro/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
 </head>
-
 <body>
-    <div class="mobile-wrap"></div>
-    <div class="mobile-menu">
-        <div class="nav-mobile__inner">
-            <div class="nav-mobile__line"></div>
-            <div class="nav-mobile__item">
-                <div class="nav-mobile__circle"></div>
-                <a href="#problems" class="nav-mobile__link">Проблемы</a>
-            </div>
-            <div class="nav-mobile__item">
-                <div class="nav-mobile__circle"></div>
-                <a href="#wins" class="nav-mobile__link">Выигранные дела</a>
-            </div>
-            <div class="nav-mobile__item">
-                <div class="nav-mobile__circle"></div>
-                <a href="#how" class="nav-mobile__link">Как это работает</a>
-            </div>
-            <div class="nav-mobile__item">
-                <div class="nav-mobile__circle"></div>
-                <a href="#team" class="nav-mobile__link">Наша команда</a>
-            </div>
-            <div class="nav-mobile__item">
-                <div class="nav-mobile__circle"></div>
-                <a href="#about" class="nav-mobile__link">О компании</a>
-            </div>
-            <div class="nav-mobile__item">
-                <div class="nav-mobile__circle"></div>
-                <a href="#contacts" class="nav-mobile__link">Контакты</a>
-            </div>
-        </div>
-    </div>
-    <div class="nav-mobile">
-        <div class="container">
-            <img src="img/logo-mobile.svg" alt="">
-            <img class="burger" src="img/burger.svg" alt="">
-        </div>
-    </div>
     <header class="header">
-        <img src="img/header/img-mobile.svg" alt="" class="header__img-mob">
-        <img src="img/header/man-mobile.png" alt="" class="header__man-mob">
         <div class="container">
-            <img class="header__man" src="img/header/man.png" alt="">
-            <img class="header__img" src="img/header/img.svg" alt="">
-            <nav class="nav">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="">
-                </div>
-                <ul class="nav__links">
-                    <li class="nav__link"><a href="#problems">Проблемы</a></li>
-                    <li class="nav__link"><a href="#wins">Выигранные дела</a></li>
-                    <li class="nav__link"><a href="#how">Как это работает</a></li>
-                    <li class="nav__link"><a href="#team">Наша команда</a></li>
-                    <li class="nav__link"><a href="#about">О компании</a></li>
-                    <li class="nav__link"><a href="#contacts">Контакты</a></li>
-                </ul>
-                <a href="tel:+74959090286" class="nav__tel">+7 495 909–02–86</a>
-            </nav>
-            <h1 class="header__title">
-                Взыскание задолженности<br>
-                без предварительной оплаты
-            </h1>
-            <h3 class="header__subtitle">
-                Работаем при сумме долга от 300 тыс. рублей
-            </h3>
-            <ul class="header__facts">
-                <li class="header__fact">
-                    <span class="header__fact-num">85</span>
-                    <span class="header__fact-text">
-                        85% успешных<br>
-                        кейсов
-                    </span>
-                </li>
-                <li class="header__fact">
-                    <span class="header__fact-num">12</span>
-                    <span class="header__fact-text">
-                        12 лет судебной<br>
-                        практики
-                    </span>
-                </li>
-                <li class="header__fact">
-                    <span class="header__fact-num">3,5</span>
-                    <span class="header__fact-text">
-                        Портфель взыскания на сумму<br>
-                        более 3,5 млрд рублей
-                    </span>
-                </li>
-            </ul>
-            <div class="header__action">
-                <button onclick="popup()" class="header__btn orange-btn">Взыскать долг</button>
-                <span class="header__action-desс">
-                    Узнайте вероятность решения<br>
-                    Вашего вопроса за 1 минуту
-                </span>
-            </div>
+            <img src="img/logo.svg" alt="" class="header__logo">
+            <h2 class="header__title">
+                Как получить деньги<br>
+                от государства
+            </h2>
+            <p class="header__subtitle">
+                18 законных и абсолютно
+                бесплатных способов
+            </p>
+            <p class="header__desc">
+                Пошаговый <span class="bold">гайд</span><br>
+                получения денег
+            </p>
+            <button class="header__btn btn-white">
+                <span>Хочу узнать!</span>
+            </button>
+            <img class="header__emblem" src="img/header/emblem.svg" alt="">
+            <img class="header__document" src="img/header/document.png" alt="">
+            <img class="header__circles" src="img/header/circles.svg"  alt="">
         </div>
     </header>
 
     <main>
-
-        <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
-        <section class="problems" id="problems">
+        
+        <section class="know">
             <div class="container">
-                <h2 class="section__title problems__title">
-                    <div class="section__title-small">С чем сталкиваются <span>наши клиенты</span></div>
-                    <div class="section__title-big"><span>проблемы</span></div>
+                <div class="burger burger-blue">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>
+                <h2 class="know__title title-blue">
+                    Знаете ли<br>
+                    вы, что...
                 </h2>
-                <ul class="problems__content">
-                    <li class="problems__item">
-                        <span class="problems__item-num">1</span>
-                        <div class="problems__item-desc">
-                            <h4 class="problems__item-title">
-                                Накопились большие объемы дебиторской
-                                задолженности и непонятно решение
-                            </h4>
-                            <p class="problems__item-text">
-                                У большинства компаний с ростом объемов и увеличением продаж - рано или поздно возникают
-                                проблемы с должниками.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="problems__item">
-                        <span class="problems__item-num">3</span>
-                        <div class="problems__item-desc">
-                            <h4 class="problems__item-title">
-                                Штатным юристам, бухгалтерам, директорам
-                                сложно справиться самостоятельно
-                            </h4>
-                            <p class="problems__item-text">
-                                Взыскание долгов — непростая процедура, требующая высокого уровня компетенции в
-                                переговорах, судах и поиске активов.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="problems__item">
-                        <span class="problems__item-num">2</span>
-                        <div class="problems__item-desc">
-                            <h4 class="problems__item-title">
-                                Попытки вернуть долг самостоятельно<br>
-                                могут испортить партнерские отношения
-                            </h4>
-                            <p class="problems__item-text">
-                                Неправильный подход к ведению переговоров и неопытность могут привести к тому, что вы
-                                испортите отношения со своим клиентом, партнером, подрядчиком или контрагентом.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="problems__item">
-                        <span class="problems__item-num">4</span>
-                        <div class="problems__item-desc">
-                            <h4 class="problems__item-title">
-                                Накопившиеся долги создают риски
-                                для вашего бизнеса
-                            </h4>
-                            <p class="problems__item-text">
-                                Часто случается и так, что запущенная проблема с долгами становится угрозой для
-                                существования компании.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+                <p class="know__text">
+                    ...в РФ ежегодно выделяются десятки миллиардов рублей<br>
+                    на социальную помощь,<br>
+                    но 90% граждан не знают<br>
+                    о том, как её получить и куда<br>
+                    за ней обращаться.
+                </p>
+                <img class="know__money" src="img/know/money.png" alt="">
+                <button class="know__btn btn-blue">приобрести гайд</button>
+            </div>
+        </section>
 
-
-                <ul class="problems__content-mob">
-                    <li class="problems__item-mob">
-                        <div class="poblems__item-mob-top">
-                            <img src="img/problems/1.svg" alt="" class="problems__item-mob-num">
-                            <h4 class="problems__item-mob-title">
-                                Накопились большие объемы
-                                дебиторской задолженности<br>
-                                и непонятно решение
-                            </h4>
+        <section class="law">
+            <div class="container">
+                <div class="burger burger-white">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>
+                <div class="law__title title-white">
+                    Вы имеете полное право
+                </div>
+                <ul class="law__content">
+                    <li class="law__item">
+                        <div class="law__img-wrap">
+                            <img src="img/law/hammer.png" alt="" class="law__img">
+                            <div class="law__img-background"></div>
                         </div>
-                        <p class="poblems__item-mob-btm">
-                            У большинства компаний с ростом объемов и увеличением продаж - рано или поздно возникают проблемы
-                            с должниками.
+                        <p class="law__item-desc">
+                            Бесплатно получить матери-<br>
+                            алы на строительство дома
+                            от государства
                         </p>
                     </li>
-                    <li class="problems__item-mob">
-                        <div class="poblems__item-mob-top">
-                            <img src="img/problems/2.svg" alt="" class="problems__item-mob-num">
-                            <h4 class="problems__item-mob-title">
-                                Попытки вернуть долг само-
-                                стоятельно могут испортить
-                                партнерские отношения
-                            </h4>
+                    <li class="law__item">
+                        <div class="law__img-wrap">
+                            <img src="img/law/pills.png" alt="" class="law__img">
+                            <div class="law__img-background"></div>
                         </div>
-                        <p class="poblems__item-mob-btm">
-                            Неправильный подход к ведению пере-
-                            говоров и неопытность могут привести
-                            к тому, что вы испортите отношения
-                            со своим клиентом, партнером, подряд-
-                            чиком или контрагентом.
+                        <p class="law__item-desc">
+                            Получить возврат денег 
+                            с любых оказанных Вам меди-<br>
+                            цинских услуг
                         </p>
                     </li>
-                    <li class="problems__item-mob">
-                        <div class="poblems__item-mob-top">
-                            <img src="img/problems/3.svg" alt="" class="problems__item-mob-num">
-                            <h4 class="problems__item-mob-title">
-                                Штатным юристам, бухгал-
-                                терам, директорам сложно
-                                справиться самостоятельно
-                            </h4>
+                    <li class="law__item">
+                        <div class="law__img-wrap">
+                            <img src="img/law/case.png" alt="" class="law__img">
+                            <div class="law__img-background"></div>
                         </div>
-                        <p class="poblems__item-mob-btm">
-                            Взыскание долгов — непростая про-
-                            цедура, требующая высокого уровня ко-
-                            мпетенции в переговорах, судах и поиске
-                            активов.
+                        <p class="law__item-desc">
+                            Получить более 100 000 руб
+                            от государства на открытие 
+                            своего бизнеса
                         </p>
                     </li>
-                    <li class="problems__item-mob">
-                        <div class="poblems__item-mob-top">
-                            <img src="img/problems/4.svg" alt="" class="problems__item-mob-num">
-                            <h4 class="problems__item-mob-title">
-                                Накопившиеся долги создают
-                                риски для вашего бизнеса
-                            </h4>
+                    <li class="law__item">
+                        <div class="law__img-wrap">
+                            <img src="img/law/docs.png" alt="" class="law__img">
+                            <div class="law__img-background"></div>
                         </div>
-                        <p class="poblems__item-mob-btm">
-                            Часто случается и так, что запущенная
-                            проблема с долгами  становится угрозой
-                            для существования компании.
+                        <p class="law__item-desc">
+                            Получить увеличенную сти-<br>
+                            пендию для студента
+                        </p>
+                    </li>
+                    <li class="law__item">
+                        <div class="law__img-wrap">
+                            <img src="img/law/wallet.png" alt="" class="law__img">
+                            <div class="law__img-background"></div>
+                        </div>
+                        <p class="law__item-desc">
+                            Получить надбавку к пенсии
+                            для пенсионера
                         </p>
                     </li>
                 </ul>
+                <p class="law__text">
+                    ... и еще более 10 способов<br>
+                    получения денег<br>
+                    по различным основаниям
+                </p>
+                <button class="law__btn btn-white">
+                    <span>Хочу узнать!</span>
+                </button>
             </div>
         </section>
 
-        <section class="promo">
+        <section class="author">
             <div class="container">
-                <img class="promo__card" src="img/promo/card.png" alt="">
-                <div class="promo__left">
-                    <h2 class="promo__title">
-                        Ваши расходы по взысканию долга<br>
-                        <span>мы берем на себя!</span>
-                    </h2>
-                    <button onclick="popup()" class="orange-btn promo__btn">Взыскать долг</button>
+                <div class="burger burger-blue">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
                 </div>
-                <div class="promo__right">
-                    <div class="promo__right-text">
-                        <img src="img/promo/right-text.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="words"></div>
-
-        <section class="wins" id="wins">
-            <div class="container">
-                <h2 class="section__title wins__title">
-                    <div class="section__title-small"><span>наши </span>победы</div>
-                    <div class="section__title-big"><span>наши победы</span></div>
+                <h2 class="author__title title-blue">
+                    Автор гайда
                 </h2>
-                <ul class="wins__facts">
-                    <li class="wins__fact"><span>95%</span> выигранных дел</li>
-                    <li class="wins__fact"><span>38%</span> клиентов вернули свои деньги еще до суда</li>
-                </ul>
-
-                <ul class="wins__content swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <li class="wins__item swiper-slide">
-                            <div class="wins__item-left">
-                                <div class="wins__item-img">
-                                    <img src="img/wins/1.png" alt="" class="wins__item-img-preview">
-                                    <div class="wins__item-folder">
-                                        <span class="wins__item-name">№А64-7674/2016</span>
-                                        <span class="wins-item__cost-title">Сумма долга:</span>
-                                        <span class="wins-item__cost">763 500 руб</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wins__item-right">
-                                <h3 class="wins__item-title">Взыскали долг на сумму 763 500 руб.</h3>
-
-                                <h3 class="wins__item-title-mob">
-                                    Вернули долг ликвидными акти-
-                                    вами на сумму 3 млн рублей
-                                </h3>
-                                <div class="wins__item-subtitle-mob">
-                                    Сумма долга: <span>3 000 000 руб</span>
-                                </div>
-
-                                <div class="wins__item-problem">
-                                    <span class="wins__item-key">Проблема:</span>
-                                    <p class="wins__item-value">
-                                        По мере роста компании и объёмов продаж, возникает необходимость взыскания<br>
-                                        дебеторской задолженности.
-                                    </p>
-                                </div>
-                                <div class="wins__item-solution">
-                                    <span class="wins__item-key">Решение:</span>
-                                    <p class="wins__item-value">
-                                        Передать взыскание задолженности юридической фирме “Гошин Групп”. Компания
-                                        входит<br>
-                                        в реестр в ФССП России, осуществляет взыскание задолженноти в качестве
-                                        основного<br>
-                                        вида деятельности.
-                                    </p>
-                                </div>
-                                <a href="#" class="wins__item-docs">Посмотреть документы</a>
-                            </div>
-                        </li>
-
-                        <li class="wins__item swiper-slide">
-                            <div class="wins__item-left">
-                                <div class="wins__item-img">
-                                    <img src="img/wins/1.png" alt="" class="wins__item-img-preview">
-                                    <div class="wins__item-folder">
-                                        <span class="wins__item-name">№А64-7674/2016</span>
-                                        <span class="wins-item__cost-title">Сумма долга:</span>
-                                        <span class="wins-item__cost">763 500 руб</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wins__item-right">
-                                <h3 class="wins__item-title">Взыскали долг на сумму 763 500 руб.</h3>
-
-                                <h3 class="wins__item-title-mob">
-                                    Вернули долг ликвидными акти-
-                                    вами на сумму 3 млн рублей
-                                </h3>
-                                <div class="wins__item-subtitle-mob">
-                                    Сумма долга: <span>3 000 000 руб</span>
-                                </div>
-
-                                <div class="wins__item-problem">
-                                    <span class="wins__item-key">Проблема:</span>
-                                    <p class="wins__item-value">
-                                        По мере роста компании и объёмов продаж, возникает необходимость взыскания<br>
-                                        дебеторской задолженности.
-                                    </p>
-                                </div>
-                                <div class="wins__item-solution">
-                                    <span class="wins__item-key">Решение:</span>
-                                    <p class="wins__item-value">
-                                        Передать взыскание задолженности юридической фирме “Гошин Групп”. Компания
-                                        входит<br>
-                                        в реестр в ФССП России, осуществляет взыскание задолженноти в качестве
-                                        основного<br>
-                                        вида деятельности.
-                                    </p>
-                                </div>
-                                <a href="#" class="wins__item-docs">Посмотреть документы</a>
-                            </div>
-                        </li>
-
-                        <li class="wins__item swiper-slide">
-                            <div class="wins__item-left">
-                                <div class="wins__item-img">
-                                    <img src="img/wins/1.png" alt="" class="wins__item-img-preview">
-                                    <div class="wins__item-folder">
-                                        <span class="wins__item-name">№А64-7674/2016</span>
-                                        <span class="wins-item__cost-title">Сумма долга:</span>
-                                        <span class="wins-item__cost">763 500 руб</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wins__item-right">
-                                <h3 class="wins__item-title">Взыскали долг на сумму 763 500 руб.</h3>
-
-                                <h3 class="wins__item-title-mob">
-                                    Вернули долг ликвидными акти-
-                                    вами на сумму 3 млн рублей
-                                </h3>
-                                <div class="wins__item-subtitle-mob">
-                                    Сумма долга: <span>3 000 000 руб</span>
-                                </div>
-
-                                <div class="wins__item-problem">
-                                    <span class="wins__item-key">Проблема:</span>
-                                    <p class="wins__item-value">
-                                        По мере роста компании и объёмов продаж, возникает необходимость взыскания<br>
-                                        дебеторской задолженности.
-                                    </p>
-                                </div>
-                                <div class="wins__item-solution">
-                                    <span class="wins__item-key">Решение:</span>
-                                    <p class="wins__item-value">
-                                        Передать взыскание задолженности юридической фирме “Гошин Групп”. Компания
-                                        входит<br>
-                                        в реестр в ФССП России, осуществляет взыскание задолженноти в качестве
-                                        основного<br>
-                                        вида деятельности.
-                                    </p>
-                                </div>
-                                <a href="#" class="wins__item-docs">Посмотреть документы</a>
-                            </div>
-                        </li>
-
-                        <li class="wins__item swiper-slide">
-                            <div class="wins__item-left">
-                                <div class="wins__item-img">
-                                    <img src="img/wins/1.png" alt="" class="wins__item-img-preview">
-                                    <div class="wins__item-folder">
-                                        <span class="wins__item-name">№А64-7674/2016</span>
-                                        <span class="wins-item__cost-title">Сумма долга:</span>
-                                        <span class="wins-item__cost">763 500 руб</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wins__item-right">
-                                <h3 class="wins__item-title">Взыскали долг на сумму 763 500 руб.</h3>
-
-                                <h3 class="wins__item-title-mob">
-                                    Вернули долг ликвидными акти-
-                                    вами на сумму 3 млн рублей
-                                </h3>
-                                <div class="wins__item-subtitle-mob">
-                                    Сумма долга: <span>3 000 000 руб</span>
-                                </div>
-
-                                <div class="wins__item-problem">
-                                    <span class="wins__item-key">Проблема:</span>
-                                    <p class="wins__item-value">
-                                        По мере роста компании и объёмов продаж, возникает необходимость взыскания<br>
-                                        дебеторской задолженности.
-                                    </p>
-                                </div>
-                                <div class="wins__item-solution">
-                                    <span class="wins__item-key">Решение:</span>
-                                    <p class="wins__item-value">
-                                        Передать взыскание задолженности юридической фирме “Гошин Групп”. Компания
-                                        входит<br>
-                                        в реестр в ФССП России, осуществляет взыскание задолженноти в качестве
-                                        основного<br>
-                                        вида деятельности.
-                                    </p>
-                                </div>
-                                <a href="#" class="wins__item-docs">Посмотреть документы</a>
-                            </div>
-                        </li>
-
-                        <li class="wins__item swiper-slide">
-                            <div class="wins__item-left">
-                                <div class="wins__item-img">
-                                    <img src="img/wins/1.png" alt="" class="wins__item-img-preview">
-                                    <div class="wins__item-folder">
-                                        <span class="wins__item-name">№А64-7674/2016</span>
-                                        <span class="wins-item__cost-title">Сумма долга:</span>
-                                        <span class="wins-item__cost">763 500 руб</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wins__item-right">
-                                <h3 class="wins__item-title">Взыскали долг на сумму 763 500 руб.</h3>
-
-                                <h3 class="wins__item-title-mob">
-                                    Вернули долг ликвидными акти-
-                                    вами на сумму 3 млн рублей
-                                </h3>
-                                <div class="wins__item-subtitle-mob">
-                                    Сумма долга: <span>3 000 000 руб</span>
-                                </div>
-
-                                <div class="wins__item-problem">
-                                    <span class="wins__item-key">Проблема:</span>
-                                    <p class="wins__item-value">
-                                        По мере роста компании и объёмов продаж, возникает необходимость взыскания<br>
-                                        дебеторской задолженности.
-                                    </p>
-                                </div>
-                                <div class="wins__item-solution">
-                                    <span class="wins__item-key">Решение:</span>
-                                    <p class="wins__item-value">
-                                        Передать взыскание задолженности юридической фирме “Гошин Групп”. Компания
-                                        входит<br>
-                                        в реестр в ФССП России, осуществляет взыскание задолженноти в качестве
-                                        основного<br>
-                                        вида деятельности.
-                                    </p>
-                                </div>
-                                <a href="#" class="wins__item-docs">Посмотреть документы</a>
-                            </div>
-                        </li>
-
-                        <li class="wins__item swiper-slide">
-                            <div class="wins__item-left">
-                                <div class="wins__item-img">
-                                    <img src="img/wins/1.png" alt="" class="wins__item-img-preview">
-                                    <div class="wins__item-folder">
-                                        <span class="wins__item-name">№А64-7674/2016</span>
-                                        <span class="wins-item__cost-title">Сумма долга:</span>
-                                        <span class="wins-item__cost">763 500 руб</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wins__item-right">
-                                <h3 class="wins__item-title">Взыскали долг на сумму 763 500 руб.</h3>
-
-                                <h3 class="wins__item-title-mob">
-                                    Вернули долг ликвидными акти-
-                                    вами на сумму 3 млн рублей
-                                </h3>
-                                <div class="wins__item-subtitle-mob">
-                                    Сумма долга: <span>3 000 000 руб</span>
-                                </div>
-
-                                <div class="wins__item-problem">
-                                    <span class="wins__item-key">Проблема:</span>
-                                    <p class="wins__item-value">
-                                        По мере роста компании и объёмов продаж, возникает необходимость взыскания<br>
-                                        дебеторской задолженности.
-                                    </p>
-                                </div>
-                                <div class="wins__item-solution">
-                                    <span class="wins__item-key">Решение:</span>
-                                    <p class="wins__item-value">
-                                        Передать взыскание задолженности юридической фирме “Гошин Групп”. Компания
-                                        входит<br>
-                                        в реестр в ФССП России, осуществляет взыскание задолженноти в качестве
-                                        основного<br>
-                                        вида деятельности.
-                                    </p>
-                                </div>
-                                <a href="#" class="wins__item-docs">Посмотреть документы</a>
-                            </div>
-                        </li>
-
-                    </div>
-
-                    <div class="wins__nav">
-                        <div class="wins__nav-first">
-                            <img src="img/wins/wins-prev.svg" alt="" class="wins__prev">
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="wins__constrols">
-                            <img src="img/wins/wins-prev.svg" alt="" class="wins__prev">
-                            <img src="img/wins/wins-next.svg" alt="" class="wins__next">
-                        </div>
-                    </div>
-                </ul>
-
+                <h3 class="author__name">Анна Виткина</h3>
+                <p class="author__text">
+                    Практикующий юрист, глава москов-<br> ской юридической фирмы с опытом работы более 10 лет. За 2019-й год получила более 11 миллионов рублей компенсации от государства<br>
+                    для своих клиентов. 
+                </p>
+                <button class="author__btn btn-blue">приобрести гайд</button>
+                <img class="author__img" src="img/author/author.png" alt="">
+                <img src="img/author/emblem.svg" alt="" class="author__emblem">
             </div>
         </section>
 
-        <section class="analys">
+        <section class="inside">
+            <img class="inside__circles" src="img/header/circles.svg" alt="">
             <div class="container">
-                <img class="analys__img" src="img/analys/img.svg" alt="">
-                <div class="analys__left">
-                    <h2 class="analys__title">
-                        Анализ должника<br>
-                        <span>бесплатно</span> за 24 часа
-                    </h2>
-                    <p class="analys__subtitle">
-                        Заполните форму и мы в течение 24 часов отправим Вам<br>
-                        на почту финансовый и правовой анализ Вашего должника<br>
-                        с помощью закрытых баз данных<br>
-                    </p>
-                    <img src="img/analys/arrow.svg" alt="" class="analys__arrow">
-                    <img src="img/analys/envelope.png" alt="" class="analys__envelope">
+                <div class="burger burger-white">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
                 </div>
-                <div class="analys__right">
-                    <form action="" class="analys__form">
-                        <label for="analys__inn">ИНН вашего должника:</label>
-                        <input required type="text" id="analys__inn" class="analys__input">
-                        <label for="analys__email">Ваша электронная почта:</label>
-                        <input required type="text" id="analys__email" class="analys__input">
-                        <label for="analys__tel">Ваш телефон:</label>
-                        <input type="text" id="analys__tel" class="analys__input">
-                        <button required class="analys__btn orange-btn" type="submit">Провести анализ</button>
-                    </form>
+                <h2 class="inside__title title-white">Что внутри гайда?</h2>
+                <div class="inside__list">
+                    <ul class="inside__list-left">
+                        <li class="inside__left-item"></li>
+                        <li class="inside__left-item"></li>
+                        <li class="inside__left-item"></li>
+                        <li class="inside__left-item"></li>
+                    </ul>
+                    <ul class="inside__list-right">
+                        <li class="inside__right-item">Сумма денег, которую можно получить</li>
+                        <li class="inside__right-item">Орган, куда за ними обращаться</li>
+                        <li class="inside__right-item">Документы, которые потребуют-<br>ся для этого</li>
+                        <li class="inside__right-item">Норма Закона, которая позволя-<br>ет это сделать</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="how" id="how">
-            <div class="container">
-                <h2 class="section__title how__title">
-                    <div class="section__title-small"><span>Как</span> мы работаем</div>
-                    <div class="section__title-big"><span>работаем</span></div>
-                </h2>
-                <ul class="how__content">
-                    <li class="how__item how__item-1">
-                        <div class="how__item-inner">
-                            <div class="how__item-img">
-                                <img src="img/how/macbook.png" alt="">
-                            </div>
-                            <p class="how__item-desc">
-                                Вы оставляете<br>
-                                заявку на сайте
-                            </p>
-                        </div>
-                        
-                        <div class="how__item-id">
-                            <span class="how__item-num">01</span>
-                            <div class="how__item-line"></div>
-                        </div>
-                    </li>
-
-                    <li class="how__item how__item-2">
-                        <div class="how__item-inner">
-                            <div class="how__item-img">
-                                <img src="img/how/phone.png" alt="">
-                            </div>
-                            <p class="how__item-desc">
-                                Звонок специалиста<br>
-                                для подробной консультации<br>
-                                и формирования КП
-                            </p>
-                        </div>
-                        
-                        <div class="how__item-id">
-                            <span class="how__item-num">02</span>
-                            <div class="how__item-line"></div>
-                        </div>
-                    </li>
-
-                    <li class="how__item how__item-3">
-                        <div class="how__item-inner">
-                            <div class="how__item-img">
-                                <img src="img/how/docs.png" alt="">
-                            </div>
-                            <p class="how__item-desc">
-                                Выезд курьера<br>
-                                для заключения договора цессии<br>
-                                и передачи документов
-                            </p>
-                        </div>
-                        
-                        <div class="how__item-id">
-                            <span class="how__item-num">03</span>
-                            <div class="how__item-line"></div>
-                        </div>
-                    </li>
-
-                    <li class="how__item how__item-4">
-                        <div class="how__item-inner">
-                            <div class="how__item-img">
-                                <img src="img/how/hammer.png" alt="">
-                            </div>
-                            <p class="how__item-desc">
-                                Взыскание<br>
-                                долга
-                            </p>
-                        </div>
-                        
-                        <div class="how__item-id">
-                            <span class="how__item-num">04</span>
-                            <div class="how__item-line"></div>
-                        </div>
-                    </li>
-
-                    <li class="how__item how__item-5">
-                        <div class="how__item-inner">
-                            <div class="how__item-img">
-                                <img src="img/how/money.png" alt="">
-                            </div>
-                            <p class="how__item-desc">
-                                Выплата денежных<br>
-                                средств
-                            </p>
-                        </div>
-                        
-                        <div class="how__item-id">
-                            <span class="how__item-num">05</span>
-                            <div class="how__item-line"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="action action-1">
-            <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
-            <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
-            <div class="container">
-                <img class="action__img" src="img/analys/img.svg" alt="">
-                <div class="action__left">
-                    <h2 class="action__title">Вам не нужно никуда ехать!</h2>
-                    <span class="action__subtitle">Наш специалист подъедет в удобное для Вас место и время.</span>
-                    <button onclick="popup()" class="orange-btn action__btn">Вызвать специалиста</button>
-                </div>
-                <div class="action__right">
-                    <img src="img/promo/right-text.svg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="recommend">
-            <div class="container">
-                <h2 class="section__title recommend__title">
-                    <div class="section__title-small"><span>НАС</span> рекомендуют</div>
-                    <div class="section__title-big"><span>рекомендуют</span></div>
-                </h2>
-                <div class="recommend__content">
-                    <div class="swiper-wrapper recommend__wrap">
-
-                        <div href="#" style="background-image: url(img/recommend/3.png)"
-                            class="recommend__item swiper-slide">
-                            <a class="recommend__item-fancy" data-fancybox="recommend__group"
-                                href="img/recommend/3.png"><img src="img/recommend/view.svg" alt=""
-                                    class="recommend__item-view"></a>
-                        </div>
-                        <div href="#" style="background-image: url(img/recommend/4.png)"
-                            class="recommend__item swiper-slide">
-                            <a class="recommend__item-fancy" data-fancybox="recommend__group"
-                                href="img/recommend/4.png"><img src="img/recommend/view.svg" alt=""
-                                    class="recommend__item-view"></a>
-                        </div>
-
-
-                    </div>
-                    <div class="recommend__pagination swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="action action-2">
-            <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
-            <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
-            <div class="container">
-                <img class="action__img" src="img/analys/img.svg" alt="">
-                <div class="action__left">
-                    <h2 class="action__title">Оставить заявку на взыскание долга</h2>
-                    <span class="action__subtitle">Узнайте срок и стоимость услуги за 1 минуту</span>
-                    <button onclick="popup()" class="orange-btn action__btn">Взыскать долг</button>
-                </div>
-                <div class="action__right">
-                    <img src="img/promo/right-text.svg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="section__title about__title">
-                    <div class="section__title-small">Кратко <span>о компании</span></div>
-                    <div class="section__title-big"><span>о компании</span></div>
-                </h2>
-                <div class="about__content">
-                    <div class="about__left">
-                        <p class="about__para">
-                            «Гошин Групп» — российская юридическая фирма, специализирующаяся на работе с проблемными
-                            активами и взыскании просроченной задолженности в интересах компаний и частных лиц.<br>
-                            <br>
-                            Компания образована в 2011 году и на стадии своего становления, занималась комплексными
-                            проверками и прединвестиционными исследованиями бизнеса для фондов прямых инвестиций,
-                            проектами реструктуризации и развития бизнеса, представлением интересов компаний в
-                            российских судах.
-                        </p>
-                    </div>
-                    <div class="about__right">
-                        <p class="about__para">
-                            «Гошин Групп» — российская юридическая фирма, специализирующаяся на работе с проблемными
-                            активами и взыскании просроченной задолженности в интересах компаний и частных лиц.<br>
-                            <br>
-                            Компания образована в 2011 году и на стадии своего становления, занималась комплексными
-                            проверками и прединвестиционными исследованиями бизнеса для фондов прямых инвестиций,
-                            проектами реструктуризации и развития бизнеса, представлением интересов компаний в
-                            российских судах.
-                        </p>
-                    </div>
-                </div>
-                <div class="about__items">
-                    <div style="background-image: url(img/recommend/3.png)" class="about__item">
-                        <span class="about__item-text">Сертификаты</span>
-                    </div>
-                    <div style="background-image: url(img/recommend/3.png)" class="about__item">
-                        <span class="about__item-text">Лицензии</span>
-                    </div>
-                    <div style="background-image: url(img/recommend/3.png)" class="about__item">
-                        <span class="about__item-text">Документы</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="team" id="team">
-
-            <div class="container team-mob">
-                <h2 class="section__title team-mob__title">
-                    <div class="section__title-small">Наша <span>команда</span></div>
-                    <div class="section__title-big"><span>Команда</span></div>
-                </h2>
-                <div class="team-mob__content">
-                    <div class="swiper-wrapper">
-                        <div class="team-mob__item swiper-slide">
-                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
-                            <div class="team-mob__name">Александр Гошин</div>
-                            <div class="team-mob__subtitle">Генеральный директор</div>
-                            <div class="team-mob__desc">
-                                Помогаем начать новую жизнь<br>
-                                без финансовых обязательств
-                            </div>
-                        </div>
-                        <div class="team-mob__item swiper-slide">
-                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
-                            <div class="team-mob__name">Александр Гошин</div>
-                            <div class="team-mob__subtitle">Генеральный директор</div>
-                            <div class="team-mob__desc">
-                                Помогаем начать новую жизнь<br>
-                                без финансовых обязательств
-                            </div>
-                        </div>
-                        <div class="team-mob__item swiper-slide">
-                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
-                            <div class="team-mob__name">Александр Гошин</div>
-                            <div class="team-mob__subtitle">Генеральный директор</div>
-                            <div class="team-mob__desc">
-                                Помогаем начать новую жизнь<br>
-                                без финансовых обязательств
-                            </div>
-                        </div>
-                        <div class="team-mob__item swiper-slide">
-                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
-                            <div class="team-mob__name">Александр Гошин</div>
-                            <div class="team-mob__subtitle">Генеральный директор</div>
-                            <div class="team-mob__desc">
-                                Помогаем начать новую жизнь<br>
-                                без финансовых обязательств
-                            </div>
-                        </div>
-                        <div class="team-mob__item swiper-slide">
-                            <div style="background-image: url(img/team/1.jpg);" class="team-mob__img"></div>
-                            <div class="team-mob__name">Александр Гошин</div>
-                            <div class="team-mob__subtitle">Генеральный директор</div>
-                            <div class="team-mob__desc">
-                                Помогаем начать новую жизнь<br>
-                                без финансовых обязательств
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="team-mob__nav">
-                        <div class="team-mob__prev-wrap">
-                            <img src="img/wins/wins-prev.svg" alt="" class="team-mob__prev">
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="team-mob__next-wrap">
-                            <img src="img/wins/wins-next.svg" alt="" class="team-mob__next">
-                        </div>
-                        
-                    </div>
-                    
-
-                </div>
-            </div>
-
-
-            <div class="team__header team-desk">
+            <div class="inside__promo">
                 <div class="container">
-                    <h2 class="team__title">Наша команда</h2>
+                    <p class="inside__promo-text">
+                        Гайд будет полезен <span class="bold">абсолютно всем</span> категориям граждан РФ
+                    </p>
                 </div>
             </div>
-            <div class="team__content team-desk">
-
-                <div class="team__item team-item-active">
-                    <div class="team__left">
-                        <div style="background-image: url(img/team/1.jpg)" class="team__img"></div>
+            <div class="container">
+                <img src="img/inside/docs.png" alt="" class="inside__docs">
+                <div class="inside__read-wrap">
+                    <a href="#" class="inside__read">Читать отрывок</a>
+                </div>
+                <h2 class="inside__cost-title">Цена гайда</h2>
+                <div class="inside__cost-content">
+                    <div class="inside__cost-left">
+                        <span class="inside__cost-old">580<span class="rouble">₽</span></span>
+                        <span class="inside__cost-now">290<span class="rouble">₽</span></span>
                     </div>
-                    <div class="team__right">
-                        <h3 class="team__item-title">Александр Гошин</h3>
-                        <span class="team__item-subtitle">Генеральный директор</span>
-                        <p class="team__item-desc">
-                            Помогаем начать новую жизнь<br>
-                            без финансовых обязательств
-                        </p>
-                        <img src="img/team/img.svg" alt="" class="team__item-img">
-                        <img src="img/team/logo.svg" alt="" class="team__item-logo">
+                    <div class="inside__cost-right">
+                        <img src="img/inside/cost.svg" alt="" class="inside__cost-img">
                     </div>
                 </div>
-                <div class="team__item team-item-next">
-                    <div class="team__left">
-                        <div style="background-image: url(https://klike.net/uploads/posts/2019-05/1556777145_1.jpg)"
-                            class="team__img"></div>
-                    </div>
-                    <div class="team__right">
-                        <h3 class="team__item-title">Александр Гошин1</h3>
-                        <span class="team__item-subtitle">Генеральный директор</span>
-                        <p class="team__item-desc">
-                            Помогаем начать новую жизнь<br>
-                            без финансовых обязательств
-                        </p>
-                        <img src="img/team/img.svg" alt="" class="team__item-img">
-                        <img src="img/team/logo.svg" alt="" class="team__item-logo">
-                    </div>
-                </div>
-                <div class="team__item">
-                    <div class="team__left">
-                        <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMgVYz1nYs4i0Jix_6DfVo4J6lDUIY-u1nchSP5EfSGQIqc_4U)"
-                            class="team__img"></div>
-                    </div>
-                    <div class="team__right">
-                        <h3 class="team__item-title">Александр Гошин2</h3>
-                        <span class="team__item-subtitle">Генеральный директор</span>
-                        <p class="team__item-desc">
-                            Помогаем начать новую жизнь<br>
-                            без финансовых обязательств
-                        </p>
-                        <img src="img/team/img.svg" alt="" class="team__item-img">
-                        <img src="img/team/logo.svg" alt="" class="team__item-logo">
-                    </div>
-                </div>
-                <div class="team__item">
-                    <div class="team__left">
-                        <div style="background-image: url(https://i.pinimg.com/originals/18/6b/d2/186bd27aec856f02b5b92867ce0164ab.jpg)"
-                            class="team__img"></div>
-                    </div>
-                    <div class="team__right">
-                        <h3 class="team__item-title">Александр Гошин3</h3>
-                        <span class="team__item-subtitle">Генеральный директор</span>
-                        <p class="team__item-desc">
-                            Помогаем начать новую жизнь<br>
-                            без финансовых обязательств
-                        </p>
-                        <img src="img/team/img.svg" alt="" class="team__item-img">
-                        <img src="img/team/logo.svg" alt="" class="team__item-logo">
-                    </div>
-                </div>
-                <div class="team__item team-item-prev">
-                    <div class="team__left">
-                        <div style="background-image: url(https://klike.net/uploads/posts/2019-01/1547367999_1.jpg)"
-                            class="team__img"></div>
-                    </div>
-                    <div class="team__right">
-                        <h3 class="team__item-title">Александр Гошин4</h3>
-                        <span class="team__item-subtitle">Генеральный директор</span>
-                        <p class="team__item-desc">
-                            Помогаем начать новую жизнь<br>
-                            без финансовых обязательств
-                        </p>
-                        <img src="img/team/img.svg" alt="" class="team__item-img">
-                        <img src="img/team/logo.svg" alt="" class="team__item-logo">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="container team-desk">
-                <div class="team__nav">
-                    <div class="team__field"></div>
-                    <ul class="team__pag"></ul>
-                    <div class="team__arrows">
-                        <img class="team__prev" src="img/wins/wins-prev.svg" alt="">
-                        <img class="team__next" src="img/wins/wins-next.svg" alt="">
-                    </div>
-                </div>
+                <p class="inside__text">
+                    Вот сюда нужен какой-то<br>
+                    текст поставить!
+                </p>
+                <button class="inside__btn btn-white">
+                    <span>Хочу узнать!</span>
+                </button>
             </div>
         </section>
 
-        <!-- <section class="team-mob">
-            
-        </section> -->
-
-        <section class="action action-3">
-            <img src="img/action/left-img-mob.svg" alt="" class="action__left-img-mob">
-            <img src="img/action/img-mob.svg" alt="" class="action__img-mob">
+        <section class="feedback">
             <div class="container">
-                <img class="action__img" src="img/analys/img.svg" alt="">
-                <div class="action__left">
-                    <h2 class="action__title">доверьте взыскание долга нам!</h2>
-                    <span class="action__subtitle">Узнайте срок и стоимость услуги за 1 минуту</span>
-                    <button onclick="popup()" class="orange-btn action__btn">Взыскать долг</button>
+                <div class="burger burger-blue">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
                 </div>
-                <div class="action__right">
-                    <img src="img/promo/right-text.svg" alt="">
-                </div>
-            </div>
-        </section>
+                <h2 class="feeback__title title-blue">Ваши отзывы</h2>
 
-        <section class="faq">
-            <div class="container">
-                <h2 class="section__title faq__title">
-                    <div class="section__title-small">Частые <span>вопросы</span> клиентов</div>
-                    <div class="section__title-big"><span>вопросы</span></div>
-                </h2>
-                <ul class="faq__content">
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">Сколько стоит взыскать долг?</span>
+                <ul class="feedback__list">
+                    <li class="feedback__item">
+                        <div class="feedback__item-header">
+                            <img class="feedback__item-img" src="img/feeback/1.png" alt="">
+                            <div class="feedback__item-about">
+                                <span class="feedback__item-name">Александр</span>
+                                <div class="feedback__item-desc">Арт директор «Сделано.Вовсю»</div>
+                            </div>
                         </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
+                        <p class="feedback__item-text">
+                            Я не знал, стоит ли мне покупать эту инструкцию, но я не прога- дал! Лучший гайд на свете, что я видел! Смело покупайте!
                         </p>
                     </li>
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">Вы работаете только по Москве и Московской области?</span>
+                    <li class="feedback__item">
+                        <div class="feedback__item-header">
+                            <img class="feedback__item-img" src="img/feeback/2.png" alt="">
+                            <div class="feedback__item-about">
+                                <span class="feedback__item-name">Марина Грач</span>
+                                <div class="feedback__item-desc">Бухгалтер «Сбербанк»</div>
+                            </div>
                         </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
+                        <p class="feedback__item-text">
+                            Купила гайд и теперь знаю, как получить компенсацию от госу- дарства. Спасибо Вам!
                         </p>
                     </li>
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">Сколько времени занимает взыскание долга?</span>
+                    <li class="feedback__item">
+                        <div class="feedback__item-header">
+                            <img class="feedback__item-img" src="img/feeback/3.png" alt="">
+                            <div class="feedback__item-about">
+                                <span class="feedback__item-name">Михаил</span>
+                                <div class="feedback__item-desc">Ген.&nbsp;директор&nbsp;«АльфаСтрахование»</div>
+                            </div>
                         </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
-                        </p>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">Как осуществляется взыскание задолженности?</span>
-                        </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
-                        </p>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">Что такое договор цессии?</span>
-                        </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
-                        </p>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">За какие дела вы беретесь?</span>
-                        </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
-                        </p>
-                    </li>
-                    <li class="faq__item">
-                        <div class="faq__header">
-                            <span class="faq__btn">+</span>
-                            <span class="faq__question">Какие документы подтверждают задолженность?</span>
-                        </div>
-                        <p class="faq__text">
-                            Как правило взыскание долга занимает от 3 месяцев до 1 года, в сложных случаях может занять
-                            до 2х лет, при отсутствии у должника ликвидных активов.
+                        <p class="feedback__item-text">
+                            Благодарю за такую ценную ин- формацию. Не предполагал, что есть так много легальных спосо- бов получить деньги от госу- дарства. Теперь я могу пост- роить дом практически задарма!
                         </p>
                     </li>
                 </ul>
-            </div>
-        </section>
 
-        <section class="contacts" id="contacts">
-
-            <div class="container">
-                <h2 class="section__title contacts__title">
-                    <div class="section__title-small">
-                        остались вопросы?<br>
-                        <span>Свяжитесь с нами!</span>
-                    </div>
-                    <div class="section__title-big"><span>контакты</span></div>
-                </h2>
-                <div class="contacts-mob">
-                    <div class="contacts-mob__item">
-                        <img src="img/contacts/marker.svg" class="contacts-mob__img">
-                        <p class="contacts-mob__desc">
-                            127051, Москва<br>
-                            Большой Каретный пер,<br>
-                            д. 24, стр. 2, офис 4
-                        </p>
-                    </div>
-                    <div class="contacts-mob__item">
-                        <img src="img/contacts/tel.svg" class="contacts-mob__img">
-                        <p class="contacts-mob__desc">
-                            +7 495 909-02-86<br>
-                            +7 985 722-55-55
-                        </p>
-                    </div>
-                    <div class="contacts-mob__item">
-                        <img src="img/contacts/mail.svg" class="contacts-mob__img">
-                        <p class="contacts-mob__desc">
-                            info@goshin.ru
-                        </p>
-                    </div>
-                    <div class="contacts-mob__item">
-                        <div class="map__soc">
-                            <img src="img/contacts/1.svg" alt="">
-                            <img src="img/contacts/2.svg" alt="">
-                            <img src="img/contacts/3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="map">
-                    <div id="map"></div>
-                    <div class="map__info">
-                        <span class="map__title">
-                            127051, Москва<br>
-                            Большой Каретный пер, д. 24, стр. 2, офис 4
-                        </span>
-                        <span class="map__subtitle">Показать реквизиты</span>
-                        <div class="map__btm">
-                            <div class="map__numbers">
-                                <a href="tel:+74959090286" class="map__number">+7 495 909-02-86</a>
-                                <a href="tel:+79857225555" class="map__number">+7 985 722-55-55</a>
-                            </div>
-                            <a href="mailto:info@goshin.ru" class="map__email">info@goshin.ru</a>
-                            <div class="map__soc">
-                                <img src="img/contacts/1.svg" alt="">
-                                <img src="img/contacts/2.svg" alt="">
-                                <img src="img/contacts/3.svg" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+                <button class="feedback__btn btn-blue">приобрести гайд</button>
             </div>
         </section>
 
     </main>
 
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-col">
-                    <div class="footer-col__name">Goshin group</div>
-                    <ul class="footer-col__list">
-                        <li class="footer-col__list-item"><a class="footer-col__link elem-link elem-link--white"
-                                href="/about/">О компании</a></li>
-                        <ul class="footer-col__sublist">
-                            <li class="footer-col__list-item"><a class="footer-col__link elem-link elem-link--white"
-                                    href="/about/#our-team">Наша команда</a></li>
-                        </ul>
-                        <li class="footer-col__list-item"><a class="footer-col__link elem-link elem-link--white"
-                                href="/for-partners/">Партнерам</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <div class="footer-col__name">Должникам</div>
-                    <ul class="footer-col__list">
-                        <li class="footer-col__list-item"><a href="#popup1" data-popup=""
-                                class="footer-col__link elem-link elem-link--white">Информация о задолженности</a></li>
-                        <li class="footer-col__list-item"><a class="footer-col__link elem-link elem-link--white"
-                                href="#popup2" data-popup="">Реквизиты для оплаты</a></li>
-                        <li class="footer-col__list-item"><a class="footer-col__link elem-link elem-link--white"
-                                href="#popup3" data-popup="">Заказать справку</a></li>
-                        <li class="footer-col__list-item"><a class="footer-col__link elem-link elem-link--white"
-                                href="https://ucbreport.ru/?utm_source=goshin&amp;utm_medium=referral&amp;utm_campaign=promo&amp;utm_content=banner&amp;utm_term=to_main"
-                                target="_blank">Узнать кредитную историю</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-col--flex-between">
-                    <div class="footer-col__name">Контакты</div>
-                    <div class="footer-col__text">127051, г. Москва, Большой Каретный пер, д. 24, стр. 2, офис 4</div>
-                    <ul class="footer-col__list footer-col__contacts">
-                        <li class="footer-col__list-item"><a
-                                class="footer-col__link elem-link elem-link--white"
-                                href="mailto:info@goshin.ru">info@goshin.ru</a></li>
-                        <li class="footer-col__list-item"><a
-                                class="footer-col__link elem-link elem-link--white" href="callto:74959090286">+7 (495)
-                                909-02-86</a></li>
-                        <li class="footer-col__list-item"><a
-                                class="footer-col__link elem-link elem-link--white" href="callto:79857225555">+7 (985)
-                                722-55-55</a></li>
-                    </ul>
-                    <div class="footer-col__socials">
-                        <a class="footer-col__socials-item" target="_blank"
-                            title="telegram" href="https://tlgg.ru/Legalmoscowgroup"><img
-                                src="http://goshin.ru/local/templates/redesign_main/assets/images/required/socials/telegram1.svg"
-                                alt="telegram"></a>
-                        <a class="footer-col__socials-item" target="_blank"
-                            title="viber" href="https://viber.click/79857225555"><img
-                                src="http://goshin.ru/local/templates/redesign_main/assets/images/required/socials/viber1.svg"
-                                alt="viber"></a>
-                        <a class="footer-col__socials-item" target="_blank"
-                            title="whatsapp" href="https://wa.me/79857225555"><img
-                                src="http://goshin.ru/local/templates/redesign_main/assets/images/required/socials/whatsapp1.svg"
-                                alt="whatsapp"></a>
-                    </div>
-                </div>
-                <div class="footer-col footer-col--flex-end">
-                    <div style="opacity: 0;" class="footer-col__text">© 2020 «Goshin group»</div>
-                </div>
-            </div>
-        </div>
+        <a href="mailto:gosmoney@ya.ru" class="footer__email">gosmoney@ya.ru</a>
+        <p class="footer__text">
+            © 2020. ИП Зайцев А.П.<br>
+            ОГРН 1147746081152
+        </p>
     </footer>
 
-    <div style="display: none;" class="popup-wrap"></div>
-
-    <div style="display: none;" class="popup popup-1">
-        <div class="popup__left">
-            <div class="popup__header">
-                <h3 class="popup__header-title">Пройдите тест и получите регламент по проверке контрагентов!</h3>
-            </div>
-            <div class="popup__inner">
-                <ul class="popup__progress">
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item"></li>
-                    <li class="popup__progress-item"></li>
-                    <li class="popup__progress-item"></li>
-                    <li class="popup__progress-item"></li>
-                </ul>
-                <div class="popup__progress-mob">
-                    <div class="popup__progress-num">
-                        <span>1</span>/5
-                    </div>
-                    <img src="img/popup/close.svg" class="popup-close" alt="">
-                </div>
-
-                <h3 class="popup__title">Вы являетесь:</h3>
-                <div class="popup__content">
-                    <div class="popup__item">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Физическое лицо</span>
-                    </div>
-                    <div class="popup__item">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Юридическое лицо</span>
-                    </div>
-                </div>
-                <div class="popup__btns">
-                    <button class="popup__btn-next orange-btn">Далее</button>
-                </div>
-            </div>
-            
-        </div>
-        <div style="background-image: url(img/popup/1.jpg)" class="popup__right"></div>
-    </div>
-
-    <div style="display: none" class="popup popup-2">
-        <div class="popup__left">
-            <div class="popup__header">
-                <h3 class="popup__header-title">Пройдите тест и получите регламент по проверке контрагентов!</h3>
-            </div>
-            <div class="popup__inner">
-                <ul class="popup__progress">
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item"></li>
-                    <li class="popup__progress-item"></li>
-                    <li class="popup__progress-item"></li>
-                </ul>
-                <div class="popup__progress-mob">
-                    <div class="popup__progress-num">
-                        <span>2</span>/5
-                    </div>
-                    <img src="img/popup/close.svg" class="popup-close" alt="">
-                </div>
-                <h3 class="popup__title">
-                    Сумма долга, которую Вы хотите<br>
-                    взыскать:
-                </h3>
-                <div class="popup__content">
-                    <div class="popup__input-wrap">
-                        <input type="text" class="popup__input">
-                        <div class="popup__val">RUB</div>
-                    </div>
-                </div>
-                <div class="popup__btns">
-                    <button class="popup__btn-next orange-btn">Далее</button>
-                    <button class="popup__btn-prev">Назад</button>
-                </div>
-            </div>
-            
-        </div>
-        <div style="background-image: url(img/popup/2.jpg)" class="popup__right"></div>
-    </div>
-
-    <div style="display: none" class="popup popup-3">
-        <div class="popup__left">
-            <div class="popup__header">
-                <h3 class="popup__header-title">Пройдите тест и получите регламент по проверке контрагентов!</h3>
-            </div>
-            <div class="popup__inner">
-                <ul class="popup__progress">
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item"></li>
-                    <li class="popup__progress-item"></li>
-                </ul>
-                <div class="popup__progress-mob">
-                    <div class="popup__progress-num">
-                        <span>3</span>/5
-                    </div>
-                    <img src="img/popup/close.svg" class="popup-close" alt="">
-                </div>
-                <h3 class="popup__title">
-                    Укажите документы, подтвержда-<br>
-                    ющие задолженность:
-                </h3>
-                <div class="popup__content">
-                    <div class="popup__item-multi">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Договор</span>
-                    </div>
-                    <div class="popup__item-multi">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Решение суда</span>
-                    </div>
-                    <div class="popup__item-multi">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Закрывающие документы</span>
-                    </div>
-                    <div class="popup__item-multi">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Нет</span>
-                    </div>
-                    <div class="popup__item-multi">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Другое</span>
-                    </div>
-                </div>
-                <div class="popup__btns">
-                    <button class="popup__btn-next orange-btn">Далее</button>
-                    <button class="popup__btn-prev">Назад</button>
-                </div>
-            </div>
-            
-        </div>
-        <div style="background-image: url(img/popup/3.jpg)" class="popup__right"></div>
-    </div>
-
-    <div style="display: none" class="popup popup-4">
-        <div class="popup__left">
-            <div class="popup__header">
-                <h3 class="popup__header-title">Пройдите тест и получите регламент по проверке контрагентов!</h3>
-            </div>
-            <div class="popup__inner">
-                <ul class="popup__progress">
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item"></li>
-                </ul>
-                <div class="popup__progress-mob">
-                    <div class="popup__progress-num">
-                        <span>4</span>/5
-                    </div>
-                    <img src="img/popup/close.svg" class="popup-close" alt="">
-                </div>
-                <h3 class="popup__title">
-                    На какой стадии находится взыс-<br>
-                    кание?
-                </h3>
-                <div class="popup__content">
-                    <div class="popup__item">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Досудебная стадия, ведутся переговоры</span>
-                    </div>
-                    <div class="popup__item">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Есть решение суда, возбуждено угоровное производство</span>
-                    </div>
-                    <div class="popup__item">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Судебная, подан иск</span>
-                    </div>
-                    <div class="popup__item">
-                        <div class="popup__check">
-                            <div class="popup__check-inner"></div>
-                        </div>
-                        <span class="popup__label">Другое</span>
-                    </div>
-                </div>
-                <div class="popup__btns">
-                    <button class="popup__btn-next orange-btn">Далее</button>
-                    <button class="popup__btn-prev">Назад</button>
-                </div>
-            </div>
-            
-        </div>
-        <div style="background-image: url(img/popup/4.jpg)" class="popup__right"></div>
-    </div>
-
-    <div style="display: none;" class="popup popup-last">
-        <div class="popup__left">
-            <div class="popup__header">
-                <h3 class="popup__header-title">Пройдите тест и получите регламент по проверке контрагентов!</h3>
-            </div>
-            <div class="popup__inner">
-                <ul class="popup__progress">
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                    <li class="popup__progress-item popup__progress-item--active"></li>
-                </ul>
-                <div class="popup__progress-mob">
-                    <div class="popup__progress-num">
-                        <span>5</span>/5
-                    </div>
-                    <img src="img/popup/close.svg" class="popup-close" alt="">
-                </div>
-                <h3 class="popup__title">
-                    Отлично, последний шаг!
-                </h3>
-                <p class="popup__subtitle">
-                    После прохождения теста мы отправим Вам на почту<br>
-                    полезную инструкцию
-                </p>
-                <form class="popup-last__form" action="">
-                    <div class="popup-last__items">
-                        <div class="popup-last__item">
-                            <label for="email" class="popup-last__label">Ваша электронная почта:</label>
-                            <input required id="email" type="text" class="popup-last__input">
-                        </div>
-                        
-                        <div class="popup-last__item">
-                            <label for="tel" class="popup-last__label">Ваш телефон:</label>
-                            <input required id="tel" type="text" class="popup-last__input">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="popup-last__btn orange-btn">Завершить</button>
-                </form>
-
-            </div>
-            
-        </div>
-        <div style="background-image: url(img/popup/5.png)" class="popup__right"></div>
-    </div>
-    
-    <div style="display: none;" class="popup-thank">
-        <div class="popup-thank__inner">
-            <img src="img/popup/img.svg" alt="" class="popup-thank__img-sm">
-            <img src="img/popup/img-big.svg" alt="" class="popup-thank__img-big">
-            <img src="img/popup/woman.png" alt="" class="popup-thank__woman">
-            <img src="img/popup/close.svg" alt="" class="popup-thank__close">
-            <img src="img/popup/img-mob.svg" alt="" class="popup-thank__img-mob">
-            <img src="img/popup/woman-mob.png" alt="" class="popup-thank__woman-mob">
-            <div class="popup-thank__content">
-                <div class="popup-thank__title">Спасибо за Вашу заявку!</div>
-                <p class="popup-thank__desc">
-                    Мы свяжемся с Вами в течение<br>
-                    <span>10 минут</span> и ответим на все вопросы.
-                </p>
-                <div class="popup-thank__down-text">Ваш персональный менеджер Дарья</div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="fancybox/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            direction: 'horizontal',
-            loop: true,
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.wins__next',
-                prevEl: '.wins__prev',
-            },
-        });
-
-        if(document.documentElement.clientWidth > 576) {
-            var mySwiper1 = new Swiper('.recommend__content', {
-                direction: 'horizontal',
-                loop: true,
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                slidesPerView: 2,
-                spaceBetween: 18,
-            });
-        } else {
-            var mySwiper1 = new Swiper('.recommend__content', {
-                direction: 'horizontal',
-                loop: true,
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                slidesPerView: 1,
-            });
-        }
-        
-        var mySwiper2 = new Swiper('.team-mob__content', {
-                direction: 'horizontal',
-                loop: true,
-
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                slidesPerView: 1,
-                navigation: {
-                    nextEl: '.team-mob__next',
-                    prevEl: '.team-mob__prev',
-                },
-            });
-
-        $(document).ready(function () {
-            $(".recommend__item-fancy").fancybox();
-        });
-    </script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=24d9efc5-46d6-4a88-bfbd-d4c68aa2be5b&lang=ru_RU"
-        type="text/javascript"></script>
-    <script>
-        ymaps.ready(function () {
-            var myMap = new ymaps.Map('map', {
-                center: [55.772684, 37.616387],
-                zoom: 17,
-                controls: []
-            }, {
-                suppressMapOpenBlock: true
-            });
-
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
-            }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/map-marker.png',
-                iconImageSize: [64, 64],
-                iconImageOffset: [-32, -64]
-            });
-
-            myMap.geoObjects
-                .add(myPlacemark);
-        });
-    </script>
-
 </body>
-
 </html>
