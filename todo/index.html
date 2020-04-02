@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    body {
+        padding-left: 20px;
+    }
+    .add-btn {
+        cursor: pointer;
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .add-inp {
+        height: 40px;
+        width: 250px;
+        font-size: 20px;
+    }
+    .list {
+        width: 400px;
+        list-style: none;
+        padding: 0;
+    }
+    .list-item {
+        display: flex;
+        font-size: 20px;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .list-item-completed span {
+        text-decoration: line-through;   
+    }
+    .list-item div {
+        font-size: 30px;
+        font-weight: bold;
+        color: red;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Список дел</h1>
+
+    <form class="add-form" action="#">
+        <input required class="add-inp" type="text">
+        <button class="add-btn">Добавить</button>
+    </form>
+    
+
+    <ul class="list">
+
+    </ul>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
