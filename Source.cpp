@@ -26,7 +26,7 @@ public:
 				min_index = i;
 			}
 		}
-		cout << "Минмальный элемент: " << min << endl;
+		cout << "Minimal element: " << min << endl;
 		return min_index;
 	}
 	~Array() {
@@ -39,7 +39,7 @@ int main() {
 
 	Array<int> test(5);
 	test.set();
-	cout << "Позиция минимального: " << test.get_min() << endl;
+	cout << "Minimal element index: " << test.get_min() << endl;
 	
 	return 0;
 }
