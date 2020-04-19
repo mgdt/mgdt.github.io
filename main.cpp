@@ -29,8 +29,10 @@ void PrintMatrix(int** a, int n)
 // данной схеме расположения
 void FillMatrix(int** a, int n)
 {
+
 	int k = 0;
-	for (int j = 0; j < n; j++) {
+	int t = 0;
+	for (int j = 0; j < ((n /2) + 1); j++) {
 		if (j % 2 == 0) {
 			for (int i = 0; i < n; i++)
 				a[i][j] = k++;
@@ -40,6 +42,32 @@ void FillMatrix(int** a, int n)
 				a[i][j] = k++;
 		}
 	}
+	if (n % 2 == 1) {
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 1) {
+                for (int j = (n /2) + 1; j < n ; j++) {
+                    a[i][j] = k++;
+                }
+            } else {
+                for (int j = n - 1; j > n /2 ; j--) {
+                    a[i][j] = k++;
+                }
+            }
+        }
+	} else {
+        for (int i = 0; i < n; i++) {
+            if (i % 2 == 1) {
+                for (int j = n /2; j < n ; j++) {
+                    a[i][j] = k++;
+                }
+            } else {
+                for (int j = n - 1; j > (n / 2) - 1 ; j--) {
+                    a[i][j] = k++;
+                }
+            }
+        }
+	}
+
 }
 
 int main()
