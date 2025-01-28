@@ -1,16 +1,149 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="/fonts/nissanbrand.css" />
-    <script type="module" crossorigin src="/assets/index-b8cca0b7.js"></script>
-    <link rel="stylesheet" href="/assets/index-3c6ad9cc.css">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .line {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 5px;
+      }
+
+      .line__color {
+        height: 50%;
+        position: relative;
+        z-index: 3;
+      }
+
+      .line__color span {
+        font-size: 14px;
+        line-height: 110%;
+        display: block;
+      }
+
+      .line--hours {
+        height: 116px;
+      }
+
+      .line--minutes {
+        height: 176px;
+      }
+
+      .line--seconds {
+        height: 236px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    
+    <h2>А часики тикают, они блять не стоят</h2>
+
+    <div class="line line--hours">
+      <div class="line__color">
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+      </div>
+    </div>
+
+    <div class="line line--minutes">
+      <div class="line__color">
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+      </div>
+    </div>
+
+    <div class="line line--seconds">
+      <div class="line__color">
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+        <span>59</span>
+      </div>
+    </div>
+
+    <script>
+      const lineSeconds = document.querySelector(".line--seconds");
+      const lineMinutes = document.querySelector(".line--minutes");
+      const lineHours = document.querySelector(".line--hours");
+
+      const date = new Date();
+
+      let seconds = date.getSeconds();
+      let minutes = date.getMinutes();
+      let hours = date.getHours();
+
+      function placeSeconds() {
+        let secondsRotate = seconds * 6;
+        lineSeconds.style.rotate = `${secondsRotate}deg`;
+
+        lineSeconds.querySelectorAll("span").forEach((item) => {
+          item.style.rotate = `-${secondsRotate}deg`;
+          item.textContent = seconds;
+        });
+      }
+
+      function placeMinutes() {
+        let minutesRotate = minutes * 6;
+        lineMinutes.style.rotate = `${minutesRotate}deg`;
+
+        lineMinutes.querySelectorAll("span").forEach((item) => {
+          item.style.rotate = `-${minutesRotate}deg`;
+          item.textContent = minutes;
+        });
+      }
+
+      function placeHours() {
+        let hoursRotate = hours * 30;
+        lineHours.style.rotate = `${hoursRotate}deg`;
+
+        lineHours.querySelectorAll("span").forEach((item) => {
+          item.style.rotate = `-${hoursRotate}deg`;
+          item.textContent = hours;
+        });
+      }
+
+      placeSeconds();
+      placeMinutes();
+      placeHours();
+
+      setInterval(() => {
+        seconds += 1;
+
+        if (seconds === 60) {
+          seconds = seconds % 60;
+          minutes += 1;
+        }
+
+        if (minutes === 60) {
+          minutes = minutes % 60;
+          hours += 1;
+        }
+
+        if (hours === 13) {
+          hours = 1;
+        }
+
+        placeSeconds();
+        placeMinutes();
+        placeHours();
+      }, 1000);
+    </script>
   </body>
 </html>
